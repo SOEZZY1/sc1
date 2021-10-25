@@ -960,38 +960,9 @@ pemuda.updatePresence(from, Presence.recording)
         su = mek.message.stickerMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('hex')
         reply(su)
 				}
-        switch (command) {
-        case 'menu':
-        case 'help':
-        case 'gz':
-        ptod = "${NomorOwner}@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '```'
-       stst = await pemuda.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `*Halo ${pushname}*
-*Kalo buttonnya gak ada*
-*ketik #allmenu*
-
-BOT-INFO
-- Owner : @${otod.split('@')[0]}
-- Battery : ${baterai.battery}
-- Mode : ${publik ? 'Public' : 'Self'}
-- Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
-- Total Hit : ${cmhit.length}
-
-TIME-INFO
-- ${tampilUcapan} ${pushname}
-- Wib : ${timeWib}
-- Wita : ${timeWita}
-- Wit : ${timeWit}  
-- Hari : ${week} ${weton}
-- Tanggal : ${calender}`
-sendButLocation(from, `${menu}`, `${uwu}Zx1 Bot - Ketik .command untuk Simpel Menu ${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MEMUNCULKAN MENU² BOT ZX1📒'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'DEVELOPER ZX1 BOTZ👤'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT BY🔥'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
-break
-case 'allmenu':
-case 'all':
+        switch (command) {   
+case 'menu':
+case 'help':
         ptod = "${NomorOwner}@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
